@@ -31,3 +31,4 @@ Then('verify contact list data is correct', () => {
     contactlist.contactListEmailColumn().should('have.text', intercept.response.body[0].email);
   });
 });
+//
