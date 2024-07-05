@@ -22,18 +22,18 @@ on:
         options:
           - SIT
           - UAT
-      githost_environment:
-        description: 'Please input git host environment to run the test (use legacy when vpn is required).'
-        type: choice
-        required: true
-        default: 'ubuntu-22-4core'
-        options:
-          - ubuntu-22-4core
-          - legacy
-      squad:
-        description: 'Please input squad. Example: spvcockpit, are, agenttools, dms, ndf4w, ndf2w, operation, sharia, etc'
-        required: true
-        default: ''
+      # githost_environment:
+      #   description: 'Please input git host environment to run the test (use legacy when vpn is required).'
+      #   type: choice
+      #   required: true
+      #   default: 'ubuntu-22-4core'
+      #   options:
+      #     - ubuntu-22-4core
+      #     - legacy
+      # squad:
+      #   description: 'Please input squad. Example: spvcockpit, are, agenttools, dms, ndf4w, ndf2w, operation, sharia, etc'
+      #   required: true
+      #   default: ''
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
