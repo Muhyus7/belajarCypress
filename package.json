@@ -1,0 +1,23 @@
+{
+  "name": "cypress-explore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "agency": "npx cypress run --spec cypress/e2e/contactList/contactList.feature",
+    "echo": "echo 'Hello world'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cucumber": "^6.0.7",
+    "cypress": "^13.6.3",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/**/*.js"
+  }
+}
